@@ -1,0 +1,10 @@
+.ban_container {
+    /* display: flex; */
+    align-items: center;
+
+}
+
+.whats_new {
+    align-items: center;
+    width: 100%
+}
