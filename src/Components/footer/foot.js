@@ -20,25 +20,12 @@ const Footer = () => {
         }}
       >
         <div style={{ flex: "1 1 100%", marginBottom: "1rem" }}>
-          <h4 style={{ marginBottom: "0.5rem" }}>Links</h4>
+          <h4 style={{ marginBottom: "0.5rem" }}>Important Links</h4>
           <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
             <li>
-              <a href="#">Link 1</a>
-            </li>
-            <li>
-              <a href="#">Link 2</a>
-            </li>
-            <li>
-              <a href="#">Link 3</a>
+              <a href="https://www.bis.gov.in/">https://www.bis.gov.in/</a>
             </li>
           </ul>
-        </div>
-        <div style={{ flex: "1 1 100%", marginBottom: "1rem" }}>
-          <h4 style={{ marginBottom: "0.5rem" }}>Contact Us</h4>
-          <p style={{ margin: 0 }}>123 Main Street</p>
-          <p style={{ margin: 0 }}>Anytown, USA 12345</p>
-          <p style={{ margin: 0 }}>Phone: (123) 456-7890</p>
-          <p style={{ margin: 0 }}>Email: info@example.com</p>
         </div>
       </div>
       <p style={{ margin: "1rem 0", fontSize: "0.8rem" }}>
