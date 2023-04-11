@@ -12,21 +12,6 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <img src={Logo} style={{ width: 50, height: 50 }} alt="Logo" />
-      <div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginleft: 200,
-          }}
-        >
-          <text>A1 MSP Consultancy</text>
-          <text>
-            {"("}Manak Service Provider{")"}
-          </text>
-        </div>
-      </div>
       <button className="navbar-toggle" onClick={toggleMenu}>
         {showMenu ? <FaTimes /> : <FaBars />}
       </button>
@@ -39,10 +24,19 @@ function NavBar() {
           <a href="#">Home</a>
         </li>
         <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
           <a href="#">About</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#">Recent Updates</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li>
+          <a href="#">Gallery</a>
         </li>
       </ul>
     </nav>

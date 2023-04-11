@@ -4,6 +4,10 @@
 
 }
 
+.inner-text {
+    font-size: 40;
+}
+
 .whats_new {
     align-items: center;
     width: 100%

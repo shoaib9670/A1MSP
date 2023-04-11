@@ -1,5 +1,12 @@
 import React from "react";
 import "./services.css";
+import isi from "../../Assets/servicesLogo/isi.png";
+import halmark from "../../Assets/servicesLogo/halmarK.png";
+import bis from "../../Assets/servicesLogo/bis.png";
+import fmcs from "../../Assets/servicesLogo/fmcs.webp";
+import nsic from "../../Assets/servicesLogo/nsic.png";
+import test from "../../Assets/servicesLogo/test.png";
+import TradeM from "../../Assets/servicesLogo/TradeM.png";
 
 function OurServicesSection() {
   return (
@@ -8,80 +15,69 @@ function OurServicesSection() {
       <div className="services-container">
         <div className="services-row">
           <div className="service-card">
-            <img src="service-icon1.svg" alt="Service Icon 1" />
-            <h3>Service 1</h3>
+            <img src={isi} alt="Service Icon 1" />
+            <h3>ISI Certification</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              The ISI mark is a standards-compliance mark for industrial
+              products in India since 1950.
             </p>
           </div>
           <div className="service-card">
-            <img src="service-icon2.svg" alt="Service Icon 2" />
-            <h3>Service 2</h3>
+            <img src={halmark} alt="Service Icon 2" />
+            <h3>Gold Halmarking Setup & Registration Services</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              It is the accurate determination & official recording of the
+              equivalent content of precious metal {"("}such as gold and silver
+              {")"} in precious metal articles.
             </p>
           </div>
           <div className="service-card">
-            <img src="service-icon3.svg" alt="Service Icon 3" />
-            <h3>Service 3</h3>
+            <img src={bis} alt="Service Icon 3" />
+            <h3>BIS Registration Services</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              The Bureau of Indian Standards {"("}BIS{")"} is the National
+              Standards Body of India under Department of Consumer affairs
             </p>
           </div>
           <div className="service-card">
-            <img src="service-icon4.svg" alt="Service Icon 4" />
-            <h3>Service 4</h3>
+            <img src={fmcs} alt="Service Icon 4" />
+            <h3>FMCS Services</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              Foreign manufacturers of products who intend to export to India
+              also may obtain a BIS product certification license.
             </p>
           </div>
           <div className="service-card">
-            <img src="service-icon5.svg" alt="Service Icon 5" />
-            <h3>Service 5</h3>
+            <img src={TradeM} alt="Service Icon 5" />
+            <h3>Trademark Registration Services</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              A trademark {"("}also written trade mark or trade-mark{")"} is a
+              type of intellectual property consisting of a recognizable sign,
+              design, or expression that identifies products or services from a
+              particular source and distinguishes them from others.
             </p>
           </div>
           <div className="service-card">
-            <img src="service-icon6.svg" alt="Service Icon 6" />
-            <h3>Service 6</h3>
+            <img src={nsic} alt="Service Icon 6" />
+            <h3>MSME NSIC Registration Services</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              National Small Industries Corporation Limited {"("}NSIC{")"} is a
+              Mini Ratna government agency established by the Ministry of Micro,
+              Small and Medium Enterprises , Government of India in 1955
             </p>
           </div>
           <div className="service-card">
-            <img src="service-icon7.svg" alt="Service Icon 7" />
-            <h3>Service 7</h3>
+            <img src={test} alt="Service Icon 7" />
+            <h3>Testing Equipment</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
+              To protect consumer’s interest , BIS operates various conformity
+              assessment schemes. Under these schemes, BIS grants
+              licenses/registrations to such manufacturers who are capable of
+              producing goods conforming to relevant Indian Standards, on
+              continuous basis.
             </p>
           </div>
         </div>
-        {/* <div className="services-row">
-          <div className="service-card" style={{ display: "none" }}>
-            <img src="service-icon6.svg" alt="Service Icon 6" />
-            <h3>Service 6</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
-            </p>
-          </div>
-          <div className="service-card">
-            <img src="service-icon7.svg" alt="Service Icon 7" />
-            <h3>Service 7</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              mauris quis felis tincidunt egestas in sit amet nunc.
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );

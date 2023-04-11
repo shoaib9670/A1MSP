@@ -15,23 +15,26 @@ const ContactUs = () => {
   return (
     <div className="contact-us-container">
       <div className="contact-details">
-        <h2>Contact Us</h2>
-        <p>
-          <strong>Address:</strong> 123 Main St, Anytown USA
-        </p>
-        <p>
-          <strong>Phone:</strong> 555-555-1234
-        </p>
-        <p>
-          <strong>Email:</strong> info@example.com
-        </p>
+        <div>
+          <h2>Contact Us</h2>
+          <p>
+            <strong>Address:</strong> Office No. 600, Level 5, Shopprix Mall,
+            Sector-5, Vaishali, Ghaziabad, Uttar Pradesh - 201010
+          </p>
+          <p>
+            <strong>Phone:</strong> +918294778366
+          </p>
+          <p>
+            <strong>Email:</strong> mspconsultancy23@gmail.com
+          </p>
+        </div>
         <div className="google-map-code">
           <a href="https://www.google.com/maps/place/Shopprix+Mall/@28.6430553,77.3323563,15z/data=!3m1!5s0x390cfad1a875e803:0x8485b43fb1cf9a70!4m14!1m7!3m6!1s0x390cfad1a161f385:0x18c10d7a34a6cb90!2sShopprix+Mall!8m2!3d28.6430556!4d77.3411111!16s%2Fg%2F1vxz7_fh!3m5!1s0x390cfad1a161f385:0x18c10d7a34a6cb90!8m2!3d28.6430556!4d77.3411111!16s%2Fg%2F1vxz7_fh?authuser=0">
             <img src={map} style={{ width: 300, height: 200 }} alt="map" />
           </a>
         </div>
       </div>
-      <div className="contact-form">
+      <div style={{ alignContent: "center" }} className="contact-form">
         <h2>Send us a message</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">

@@ -1,13 +1,16 @@
 .contact-us-container {
     display: flex;
     flex-direction: row;
-    background-color: antiquewhite;
+    background-color: rgb(227, 226, 225);
 }
 
 .contact-details {
     flex-basis: 50%;
     padding: 0 1rem;
     transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact-details:hover {
@@ -28,6 +31,7 @@
     flex-basis: 50%;
     padding: 0 1rem;
     transition: background-color 0.3s ease;
+    justify-content: space-around;
 }
 
 .contact-form:hover {
@@ -46,6 +50,9 @@
 
 .contact-form .form-group {
     margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact-form label {
@@ -81,10 +88,23 @@
 
 @media screen and (max-width: 768px) {
 
+    .contact-us-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+
     .contact-details,
     .contact-form {
         flex-basis: 100%;
         padding: 1rem;
+        width: 80%;
+        align-items: center;
     }
 
     .contact-form label {
