@@ -1,6 +1,9 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import img1 from "../../Assets/TopBannerImages/BanImg1.png";
+import img2 from "../../Assets/TopBannerImages/BanImg2.png";
+import img3 from "../../Assets/TopBannerImages/BanImg3.png";
 import "./About.css";
 
 function AboutUs() {
@@ -16,25 +19,16 @@ function AboutUs() {
             infiniteLoop={true}
           >
             <div>
-              <img
-                src="https://wallpapercave.com/wp/wp3203375.jpg"
-                alt="First slide"
-              />
-              <p className="legend">First slide label</p>
+              <img src={img1} alt="First slide" />
+              <p className="legend">Gold Hallmarking Setup and Registration</p>
             </div>
             <div>
-              <img
-                src="https://wallpapercave.com/wp/wp3203375.jpg"
-                alt="Second slide"
-              />
-              <p className="legend">Second slide label</p>
+              <img src={img2} alt="Second slide" />
+              <p className="legend">BIS Registration Services</p>
             </div>
             <div>
-              <img
-                src="https://wallpapercave.com/wp/wp3203375.jpg"
-                alt="Third slide"
-              />
-              <p className="legend">Third slide label</p>
+              <img src={img3} alt="Third slide" />
+              <p className="legend">MSME NSIC Registration Services</p>
             </div>
           </Carousel>
         </div>

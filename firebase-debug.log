@@ -1,0 +1,197 @@
+[debug] [2023-04-26T18:34:02.092Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T18:34:02.097Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-26T18:34:02.098Z] CLI Version:   11.28.0
+[debug] [2023-04-26T18:34:02.101Z] Platform:      win32
+[debug] [2023-04-26T18:34:02.101Z] Node Version:  v18.12.1
+[debug] [2023-04-26T18:34:02.104Z] Time:          Thu Apr 27 2023 00:04:02 GMT+0530 (India Standard Time)
+[debug] [2023-04-26T18:34:02.105Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T18:34:02.115Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-26T18:34:02.406Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T18:34:02.407Z] > authorizing via signed-in user (shoaib@kubeonline.in)
+[debug] [2023-04-26T18:34:02.408Z] [iam] checking project a1msp-35ad9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-26T18:34:02.410Z] > refreshing access token with scopes: []
+[debug] [2023-04-26T18:34:02.412Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-26T18:34:02.412Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-26T18:34:02.906Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-26T18:34:02.907Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-26T18:34:02.939Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions [none]
+[debug] [2023-04-26T18:34:02.940Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions x-goog-quota-user=projects/a1msp-35ad9
+[debug] [2023-04-26T18:34:02.941Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T18:34:03.226Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-26T18:34:03.227Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-04-26T18:34:05.193Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions 200
+[debug] [2023-04-26T18:34:05.193Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions {}
+[debug] [2023-04-26T18:34:05.194Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project a1msp-35ad9:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-04-26T18:34:05.196Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 [none]
+[debug] [2023-04-26T18:34:05.863Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 403
+[debug] [2023-04-26T18:34:05.864Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-26T18:34:05.867Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-26T18:34:06.295Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project a1msp-35ad9. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-04-26T18:35:24.103Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T18:35:24.107Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-26T18:35:24.109Z] CLI Version:   11.28.0
+[debug] [2023-04-26T18:35:24.110Z] Platform:      win32
+[debug] [2023-04-26T18:35:24.110Z] Node Version:  v18.12.1
+[debug] [2023-04-26T18:35:24.112Z] Time:          Thu Apr 27 2023 00:05:24 GMT+0530 (India Standard Time)
+[debug] [2023-04-26T18:35:24.113Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T18:35:24.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T18:35:24.307Z] > authorizing via signed-in user (shoaib@kubeonline.in)
+[debug] [2023-04-26T18:35:24.308Z] [iam] checking project a1msp-35ad9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-26T18:35:24.314Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions [none]
+[debug] [2023-04-26T18:35:24.314Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions x-goog-quota-user=projects/a1msp-35ad9
+[debug] [2023-04-26T18:35:24.315Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T18:35:27.215Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions 200
+[debug] [2023-04-26T18:35:27.216Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions {}
+[debug] [2023-04-26T18:35:27.217Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project a1msp-35ad9:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-04-26T18:35:27.222Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 [none]
+[debug] [2023-04-26T18:35:28.647Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 403
+[debug] [2023-04-26T18:35:28.647Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-26T18:35:28.649Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-26T18:35:29.424Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project a1msp-35ad9. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-04-26T18:37:28.776Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T18:37:28.780Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-26T18:37:28.782Z] CLI Version:   11.29.0
+[debug] [2023-04-26T18:37:28.783Z] Platform:      win32
+[debug] [2023-04-26T18:37:28.783Z] Node Version:  v18.12.1
+[debug] [2023-04-26T18:37:28.787Z] Time:          Thu Apr 27 2023 00:07:28 GMT+0530 (India Standard Time)
+[debug] [2023-04-26T18:37:28.788Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T18:37:29.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T18:37:29.011Z] > authorizing via signed-in user (shoaib@kubeonline.in)
+[debug] [2023-04-26T18:37:29.011Z] [iam] checking project a1msp-35ad9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-26T18:37:29.016Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions [none]
+[debug] [2023-04-26T18:37:29.016Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions x-goog-quota-user=projects/a1msp-35ad9
+[debug] [2023-04-26T18:37:29.017Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T18:37:31.009Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions 200
+[debug] [2023-04-26T18:37:31.010Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/a1msp-35ad9:testIamPermissions {}
+[debug] [2023-04-26T18:37:31.012Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project a1msp-35ad9:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-04-26T18:37:31.015Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 [none]
+[debug] [2023-04-26T18:37:31.964Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 403
+[debug] [2023-04-26T18:37:31.964Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-26T18:37:31.966Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-26T18:37:32.444Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project a1msp-35ad9. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-04-26T18:37:52.911Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T18:37:52.916Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-26T18:37:52.918Z] CLI Version:   11.29.0
+[debug] [2023-04-26T18:37:52.918Z] Platform:      win32
+[debug] [2023-04-26T18:37:52.919Z] Node Version:  v18.12.1
+[debug] [2023-04-26T18:37:52.924Z] Time:          Thu Apr 27 2023 00:07:52 GMT+0530 (India Standard Time)
+[debug] [2023-04-26T18:37:52.925Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T18:37:53.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T18:37:53.132Z] > authorizing via signed-in user (shoaib@kubeonline.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects\A1 MSP Consultancy\a1mspclient
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-26T18:38:08.844Z] Using project from CLI flag: a1msp-35ad9
+[debug] [2023-04-26T18:38:08.854Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 [none]
+[debug] [2023-04-26T18:38:09.685Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 403
+[debug] [2023-04-26T18:38:09.686Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-26T18:38:09.688Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-26T18:38:10.094Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project a1msp-35ad9. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-04-26T18:39:00.899Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T18:39:00.903Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-26T18:39:00.904Z] CLI Version:   11.29.0
+[debug] [2023-04-26T18:39:00.905Z] Platform:      win32
+[debug] [2023-04-26T18:39:00.905Z] Node Version:  v18.12.1
+[debug] [2023-04-26T18:39:00.908Z] Time:          Thu Apr 27 2023 00:09:00 GMT+0530 (India Standard Time)
+[debug] [2023-04-26T18:39:00.909Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T18:39:01.114Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T18:39:01.115Z] > authorizing via signed-in user (shoaib@kubeonline.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects\A1 MSP Consultancy\a1mspclient
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-26T18:39:20.713Z] Using project from CLI flag: a1msp-35ad9
+[debug] [2023-04-26T18:39:20.729Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 [none]
+[debug] [2023-04-26T18:39:21.583Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 403
+[debug] [2023-04-26T18:39:21.584Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/a1msp-35ad9 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-26T18:39:21.585Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-26T18:39:22.004Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project a1msp-35ad9. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-04-26T18:39:43.053Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T18:39:43.060Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. shoaib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2023-04-26T18:39:43.062Z] CLI Version:   11.29.0
+[debug] [2023-04-26T18:39:43.062Z] Platform:      win32
+[debug] [2023-04-26T18:39:43.063Z] Node Version:  v18.12.1
+[debug] [2023-04-26T18:39:43.067Z] Time:          Thu Apr 27 2023 00:09:43 GMT+0530 (India Standard Time)
+[debug] [2023-04-26T18:39:43.068Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T18:39:43.265Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T18:39:43.266Z] > authorizing via signed-in user (shoaib@kubeonline.in)
+[debug] [2023-04-26T18:39:43.276Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-04-26T18:39:44.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-26T18:39:44.715Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]

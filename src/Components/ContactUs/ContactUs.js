@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import map from "../../Assets/Map/Map.png";
 
-const ContactUs = () => {
+export const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -38,9 +38,10 @@ const ContactUs = () => {
         <h2>Send us a message</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            {/* <label htmlFor="name">Name:</label> */}
             <input
               type="text"
+              placeholder="Name"
               id="name"
               name="name"
               value={name}
@@ -49,8 +50,9 @@ const ContactUs = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
+            {/* <label htmlFor="email">Email:</label> */}
             <input
+              placeholder="Email"
               type="email"
               id="email"
               name="email"
@@ -60,8 +62,9 @@ const ContactUs = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Phone:</label>
+            {/* <label htmlFor="phone">Phone:</label> */}
             <input
+              placeholder="Phone"
               type="tel"
               id="phone"
               name="phone"
@@ -71,8 +74,9 @@ const ContactUs = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message:</label>
+            {/* <label htmlFor="message">Message:</label> */}
             <textarea
+              placeholder="Message"
               id="message"
               name="message"
               value={message}

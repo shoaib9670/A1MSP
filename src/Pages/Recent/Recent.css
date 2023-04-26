@@ -1,0 +1,61 @@
+.recent-updates-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.main-heading {
+    display: flex;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: #333;
+}
+
+.recent-updates-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recent-update-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.recent-update-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recent-update-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.recent-update-date {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+@media screen and (min-width: 600px) {
+    .recent-update-card {
+        margin-right: 20px;
+    }
+}

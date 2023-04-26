@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navigation.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../../Assets/logo/Logo.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,22 +21,22 @@ function NavBar() {
         }
       >
         <li>
-          <a href="#">Home</a>
+          <Link to={"/"}>Home</Link>
         </li>
         <li>
-          <a href="#">Services</a>
+          <Link to={"/services"}>Services</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to={"/about"}>About</Link>
         </li>
         <li>
-          <a href="#">Recent Updates</a>
+          <Link to={"/recent"}>Recent Updates</Link>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <Link to={"/contact"}>Contact Us</Link>
         </li>
         <li>
-          <a href="#">Gallery</a>
+          <Link to={"/gallery"}>Gallery</Link>
         </li>
       </ul>
     </nav>
